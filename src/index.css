@@ -5,12 +5,40 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #747fe7;
-  color: #747fe7 ;
+  
+}
+
+.container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  transition: background 1s ease;
+}
+
+.black {
+  background-color: #000000;
+  color: #000000 ;
+}
+
+.grey {
+  background-color: #4a5568;
+  color: #4a5568 ;
+}
+
+.red {
+  background-color: #e53e3e;
+  color:#e53e3e;
+}
+
+.green {
+  background-color: #2f855a;
+  color: #2f855a;
+}
+
+.blue {
+  background-color: #3182ce;
+  color: blue;
 }
 
 .quote-box {
@@ -18,12 +46,12 @@ body {
   border-radius: 3px;
   /* width: 450px; */
   padding: 40px 50px;
+  transition: all 1s ease;
 }
 
 .quote-text i {
   font-size: 1.0em;
   margin-right: 0.4em;
-  
 }
 
 .quote-text {
@@ -32,7 +60,7 @@ body {
   height: auto;
   font-weight: 500;
   width: 450px;
-}
+  }
 
 .quote-author {
   text-align: right;
@@ -52,7 +80,6 @@ body {
   display: flex;
   border: none;
   border-radius: 3px;
-  background-color: #747fe7;
   color: #fff;
   height: 25px;
   outline: none;
@@ -62,4 +89,41 @@ body {
   align-items: center;
   cursor: pointer;
   margin-right: 10px;
+  transition: all 1s ease;
 }
+
+.button-black {
+  background-color: black;
+}
+
+.button-grey {
+  background-color: #4a5568;
+}
+
+.button-green {
+  background-color: #2f855a;
+}
+
+.button-blue {
+  background-color: #3182ce;
+}
+
+.button-red {
+  background-color: #e53e3e;
+}
+
+/* @keyframes fadeAnimation {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+

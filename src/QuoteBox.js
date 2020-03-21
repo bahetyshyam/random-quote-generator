@@ -6,7 +6,7 @@ class QuoteBox extends React.Component {
     state = {
         result: undefined,
         currentQuote: '',
-        currentAuthor: ''
+        currentAuthor: '',
     }
 
     componentDidMount() {
@@ -16,9 +16,12 @@ class QuoteBox extends React.Component {
     }
 
     handleNewQuote = (event) => {
-        const rand = this.state.result && Math.floor(Math.random() * this.state.result.quotes.length);
-        console.log(rand);
-        this.setState({ currentQuote: this.state.result.quotes[rand].quote, currentAuthor: this.state.result.quotes[rand].author })
+        this.props.handleThemeChange();
+        const randQuote = this.state.result && Math.floor(Math.random() * this.state.result.quotes.length);
+        this.setState({
+            currentQuote: this.state.result.quotes[randQuote].quote,
+            currentAuthor: this.state.result.quotes[randQuote].author
+        })
     }
 
 
@@ -36,9 +39,9 @@ class QuoteBox extends React.Component {
                 </div>
 
                 <div className="buttons">
-                    <Button float={"left"}>A</Button>
-                    <Button float={"left"}>B</Button>
-                    <Button onClick={this.handleNewQuote} float={"right"} marginRight={0}>New Quote</Button>
+                    <Button currentTheme={this.props.currentTheme} float={"left"}>A</Button>
+                    <Button currentTheme={this.props.currentTheme} float={"left"}>B</Button>
+                    <Button currentTheme={this.props.currentTheme} onClick={this.handleNewQuote} float={"right"} marginRight={0}>New Quote</Button>
                 </div>
             </div>
         )
