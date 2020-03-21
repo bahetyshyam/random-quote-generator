@@ -25,7 +25,12 @@ class QuoteBox extends React.Component {
     }
 
 
+
     render() {
+
+        let endodeText = encodeURIComponent(this.state.currentQuote);
+        let tweetLink = `https://twitter.com/intent/tweet?hashtags=quotes&&text=+${encodeURIComponent('"' + this.state.currentQuote + '" ' + this.state.currentAuthor)}`;
+        console.log(tweetLink);
         return (
             <div className="quote-box">
                 <div className="quote-text">
