@@ -4,8 +4,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -18,17 +17,17 @@ body {
 
 .black {
   background-color: #000000;
-  color: #000000 ;
+  color: #000000;
 }
 
 .grey {
   background-color: #4a5568;
-  color: #4a5568 ;
+  color: #4a5568;
 }
 
 .red {
   background-color: #e53e3e;
-  color:#e53e3e;
+  color: #e53e3e;
 }
 
 .green {
@@ -38,19 +37,19 @@ body {
 
 .blue {
   background-color: #3182ce;
-  color: blue;
+  color: #3182ce;
 }
 
 .quote-box {
   background-color: #fff;
   border-radius: 3px;
-  /* width: 450px; */
+  max-width: 450px;
   padding: 40px 50px;
   transition: all 1s ease;
 }
 
 .quote-text i {
-  font-size: 1.0em;
+  font-size: 1em;
   margin-right: 0.4em;
 }
 
@@ -59,21 +58,21 @@ body {
   text-align: center;
   height: auto;
   font-weight: 500;
-  width: 450px;
-  }
+  max-width: 450px;
+}
 
 .quote-author {
   text-align: right;
-  width: 450px;
+  max-width: 450px;
   height: auto;
   padding-top: 20px;
 }
 
 .buttons {
-  width: 450px;
-  margin: auto;
-  display: block;
-  overflow: hidden;
+  max-width: 450px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .button {
@@ -83,12 +82,10 @@ body {
   color: #fff;
   height: 25px;
   outline: none;
-  margin-top: 30px;
   padding: 8px 16px 8px 16px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  margin-right: 10px;
   transition: all 1s ease;
 }
 
@@ -126,4 +123,3 @@ body {
     opacity: 1;
   }
 } */
-
